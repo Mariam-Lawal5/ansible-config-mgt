@@ -2,4 +2,4 @@
 
 #test
 
-save artifacts..cc
+save artifacts
