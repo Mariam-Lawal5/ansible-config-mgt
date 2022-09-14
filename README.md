@@ -2,5 +2,4 @@
 
 #test
 
-save artifacts.
-.
+save artifacts
