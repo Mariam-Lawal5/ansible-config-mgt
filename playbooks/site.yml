@@ -6,13 +6,12 @@
     tags:
       - always
 
-- name: Import common.yml playbook
-  hosts: all
+
+- hosts: all
 - import_playbook: ../static-assignments/common.yml
 
 - hosts: uat-webservers
-- name: webserver
-  import_playbook: ../static-assignments/uat-webservers.yml
+- import_playbook: ../static-assignments/uat-webservers.yml
 
 - name: Loadbalancers assignment
   hosts: lb
@@ -20,5 +19,4 @@
   when: load_balancer_is_required
 
 - hosts: nginx
-- name: nginx assignment
-  import_playbook: ../static-assignments/nginx.yml
+- import_playbook: ../static-assignments/nginx.yml
