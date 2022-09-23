@@ -10,9 +10,9 @@
   hosts: all
 - import_playbook: ../static-assignments/common.yml
 
-- hosts: uat-webservers
-- name: webserver
-  import_playbook: ../static-assignments/uat-webservers.yml
+# - hosts: uat-webservers
+# - name: webserver
+#   import_playbook: ../static-assignments/uat-webservers.yml
 
 - name: Loadbalancers assignment
   hosts: lb
