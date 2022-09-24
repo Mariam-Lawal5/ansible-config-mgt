@@ -2,7 +2,7 @@
 - name: Include dynamic variables
   hosts: all
   tasks:
-  - include_tasks: ../dynamic-assignment/env_vars.yml
+  - include_tasks: ../dynamic-assignment/env-vars.yml
     tags:
       - always
 
