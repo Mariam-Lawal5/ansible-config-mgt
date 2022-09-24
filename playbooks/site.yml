@@ -1,8 +1,6 @@
 ---
-- name: import common file
-  import_playbook: ../static-assignments/common-del.yml
-  tags:
-    - always
+- hosts: all
+import_playbook: ../static-assignments/common-del.yml
 
 - name: include env-vars file
   import_playbook: ../dynamic-assignments/env-vars.yml
