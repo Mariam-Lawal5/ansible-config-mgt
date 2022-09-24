@@ -6,10 +6,6 @@
 #     tags:
 #       - always
 
-- name: Import common-del.yml playbook
-  hosts: all
-- import_playbook: ../static-assignments/common-del.yml
-
 # - name: Loadbalancers assignment
 #   hosts: lb
 # - import_playbook: ../static-assignments/lb.yml
